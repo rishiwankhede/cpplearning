@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int mother,father;
+    char gender ;
+    cout << "Enter Your Mothers Height (in cm) :" << mother << endl;
+    cin >> mother;
+    cout << "Enter Your Fathers Height (in cm) :" << father << endl;
+    cin >> father;
+    cout << "Enter Your Gender (m/f) :" << gender << endl;
+    cin >> gender;
+
+    if ( gender == 'm' ) {
+        cout << "Your Expected Height is :" << (mother+father+13)/2 << endl;
+    }
+
+    else if (gender == 'f') {
+        cout << " Your Expected Height Is : " << (mother+father-13)/2 << endl;
+    }
+    else {
+        cout << " Invalid Gender" << endl;
+    }
+
+    return 0;
+}
